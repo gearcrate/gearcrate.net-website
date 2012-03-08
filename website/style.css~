@@ -52,8 +52,8 @@ ul.navbar li{
 ul.navbar li a{
     color               : rgb(102, 102, 102);
     width               : 84px;
-    height              : 29px;
-    padding             : 9px 0px 0px 6px;
+    height              : 30px;
+    padding             : 8px 0px 0px 6px;
     float               : right;
     display             : block;
     text-decoration     : none;

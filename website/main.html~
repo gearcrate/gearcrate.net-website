@@ -20,24 +20,12 @@
                 <li class = "current_page">
                     <img src = "res/images/gearcrate_logo32.png">
                     <a href = "main.html">Home</a></li>
-                <li>
-                    <img src = "res/images/gearcrate_logo32.png">
-                    <a href = "news.html">News</a></li>
-                <li>
-                    <img src = "res/images/gearcrate_logo32.png">
-                    <a href = "projects.html">Projects</a></li>
-                <li>
-                    <img src = "res/images/gearcrate_logo32.png">
-                    <a href = "blog.html">Blog</a></li>
-                <li>
-                    <img src = "res/images/gearcrate_logo32.png">
-                    <a href = "faq.html">FAQ</a></li>
-                <li>
-                    <img src = "res/images/gearcrate_logo32.png">
-                    <a href = "contact.html">Contact</a></li>
-                <li>
-                    <img src = "res/images/gearcrate_logo32.png">
-                    <a href = "about.html">About</a></li>
+                <li><a href = "news.html">News</a></li>
+                <li><a href = "projects.html">Projects</a></li>
+                <li><a href = "blog.html">Blog</a></li>
+                <li><a href = "faq.html">FAQ</a></li>
+                <li><a href = "contact.html">Contact</a></li>
+                <li><a href = "about.html">About</a></li>
             </ul>
             
             <div id = "content_area">
