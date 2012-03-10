@@ -1,1 +1,122 @@
-﻿
+﻿*{
+  margin  : 0px;
+}
+
+body{
+  background-color  : #363636;
+  padding           : 0px;
+  margin            : 0px;
+}
+
+#container{
+  min-width         : 800px;
+  margin            : 0px 16px;
+  padding           : 0px;
+}
+
+#title{
+  background-color  : #181818;
+  width             : inherit;
+  padding           : 0px;
+  margin            : 0px 0px 16px 0px;
+  color             : #ffffff;
+  text-align        : center;
+  min-height        : 48px;
+  border-bottom-left-radius  : 8px;
+  border-bottom-right-radius : 8px;
+  box-shadow: 1px 1px 4px #000000 inset,
+              1px 1px 0px #878787;
+}
+
+
+#content{
+  background-color  : #878787;
+  width             : inherit;
+  padding           : 16px 0px 16px 0px;
+  margin            : 0px 0px 16px 0px;
+  border-radius     : 8px;
+  box-shadow: 1px 1px 4px #000000,
+              1px 1px 0px #dedede inset;
+  position          : relative;
+  z-index           : 1;
+}
+
+#menu{
+  width             : inherit;
+  padding           : 0px;
+  margin            : 0px;
+  text-align        : center;
+}
+
+#menu ul{
+  list-style-type : none;
+  margin          : 0px;
+  padding         : 16px 0px;
+  height          : auto;
+}
+
+#menu ul li{
+  display                 : inline;
+  background-color        : #8249b8;
+  margin                  : 0px 8px;
+  padding                 : 16px 0px;
+  border-top-left-radius  : 8px;
+  border-top-right-radius : 8px;
+  box-shadow: 1px 1px 4px #000000,
+              1px 1px 0px #cca8ed inset;
+}
+
+#menu ul li.active{
+  background-color  : #878787;
+  box-shadow: 0px 8px 0px #878787,
+              1px 1px 4px #000000,
+              1px 1px 0px #dedede inset;
+  position          : relative;
+  z-index           : 2;
+}
+
+#menu ul li a{
+  padding           : 16px 16px;
+  line-height       : 16px;
+}
+
+#menu+div{
+  position          : relative;
+  width             : auto;
+  height            : 8px;
+  margin            : 1px 8px -9px 8px;
+  background-color  : #878787;
+  z-index           : 3;
+}
+
+#content .subcontent{
+  background-color  : #dedede;
+  width             : inherit;
+  padding           : 16px;
+  margin            : 0px 16px 16px 16px;
+  border-radius     : 8px;
+  min-height        : 48px;
+  box-shadow: 1px 1px 4px #000000,
+              1px 1px 0px #ffffff inset;
+  position          : relative;
+  z-index           : 2;
+}
+
+#content .subcontent:last-child{
+  margin-bottom : 0px;
+}
+
+#bottom{
+  background-color  : #181818;
+  width             : inherit;
+  padding           : 0px;
+  margin            : 0px;
+  color             : #ffffff;
+  text-align        : center;
+  min-height        : 48px;
+  border-top-left-radius  : 8px;
+  border-top-right-radius : 8px;
+  box-shadow: 1px 1px 4px #000000 inset,
+              1px 1px 0px #878787;
+}
+
