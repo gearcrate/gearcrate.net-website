@@ -1,65 +1,77 @@
 ﻿@font-face{
   font-family : AlteHaasGrotesk;
-  src         : url("res/fonts/AlteHaasGroteskRegular.ttf");
+  src : url("res/fonts/AlteHaasGroteskRegular.ttf");
 }
 
 @font-face{
   font-family : AlteHaasGroteskBold;
-  src         : url("res/fonts/AlteHaasGroteskBold.ttf");
+  src : url("res/fonts/AlteHaasGroteskBold.ttf");
 }
 
 *{
-  margin  : 0px;
-  padding : 0px;
+  margin      : 0px;
+  padding     : 0px;
   font-family : AlteHaasGrotesk;
   font-size   : 12px;
 }
 
 html, body, #container{
-  background-color  : #363636;
-  height            : 100%;
+  height  : 100%;
+}
+
+body{
+background-attachment : fixed;
+background-color      : #363636;
+background-image      : url("res/images/non-slip-texture.png"),
+                        -moz-linear-gradient(#545454 0%, #363636 100%);
 }
 
 body > #container {
-  height: auto;
-  min-height: 100%;
+  height      : auto;
+  min-height  : 100%;
 }
 
 #container{
-  width         : 800px;
-  margin            : 0px auto;
+  width   : 800px;
+  margin  : 0px auto;
 
 }
 
 #title{
-  background-color  : #202020;
-  width             : 768px;
-  margin            : 0px 16px;
-  color             : #ffffff;
-  text-align        : center;
-  height        : 64px;
   border-bottom-left-radius  : 8px;
   border-bottom-right-radius : 8px;
-  box-shadow:  1px  1px 4px #000000 inset,
-               1px  0px 0px #545454,
-              -1px  0px 0px #202020,
-               0px  1px 0px #545454,
-               0px -1px 0px #202020;
+  box-shadow            : 1px  1px 4px #000000 inset,
+                          1px  0px 0px #545454,
+                         -1px  0px 0px #202020,
+                          0px  1px 0px #545454,
+                          0px -1px 0px #202020;
+  background-color      : #202020;
+  background-image      : url("res/images/lined-texture-vertical.png");
+  background-attachment : fixed;
+  width                 : 768px;
+  margin                : 0px 16px;
+  color                 : #ffffff;
+
+  min-height            : 64px;
 }
 
 
 #content{
-  background-color  : #878787;
+  border-radius     : 8px;
+  box-shadow        : 1px  1px 4px #000000,
+                      1px  0px 0px #bebebe inset,
+                     -1px  0px 0px #363636 inset,
+                      0px  1px 0px #bebebe inset,
+                      0px -1px 0px #363636 inset;
   width             : auto;
   padding           : 8px 4px;
-  border-radius     : 8px;
-  box-shadow:  1px  1px 4px #000000,
-               1px  0px 0px #bebebe inset,
-              -1px  0px 0px #363636 inset,
-               0px  1px 0px #bebebe inset,
-               0px -1px 0px #363636 inset;
   position          : relative;
   z-index           : 1;
+  background-image  : url("res/images/lined-texture.png"),
+                      -moz-linear-gradient(270deg,
+                                           #aeaeae 0%,
+                                           #aeaeae 8px,
+                                           #878787 100%);
 }
 
 #content + div{
@@ -67,9 +79,9 @@ body > #container {
 }
 
 .menu{
-  width             : inherit;
-  padding-top       : 16px;
-  text-align        : center;
+  width       : inherit;
+  padding     : 16px 16px 0px 16px;
+  text-align  : left;
 }
 
 .menu ul{
@@ -80,29 +92,35 @@ body > #container {
 }
 
 .menu ul li{
-  display                 : inline;
-  background-color        : #8249b8;
-  padding                 : 16px 0px 8px 0px;
   border-top-left-radius  : 8px;
   border-top-right-radius : 8px;
-  box-shadow:  1px  1px 4px #000000,
-               1px  0px 0px #ae8fc9 inset,
-              -1px  0px 0px #351454 inset,
-               0px  1px 0px #ae8fc9 inset;
+  box-shadow:           1px  1px 4px #000000,
+                        1px  0px 0px #707070 inset,
+                       -1px  0px 0px #303030 inset,
+                        0px  1px 0px #707070 inset;
+  display             : inline;
+  background-color    : #454545;
+  background-image    : url("res/images/lined-texture.png");
+  background-position : 0px -1px;
+  padding             : 16px 0px 8px 0px;
 }
 
 .menu ul li.active{
-  background-color  : #878787;
-  box-shadow:  0px  8px 0px #878787,
-               1px  1px 4px #000000,
-               1px  0px 0px #bebebe inset,
-              -1px  0px 0px #363636 inset,
-               0px  1px 0px #bebebe inset;
+  background-color  : #aeaeae;
   position          : relative;
   z-index           : 2;
+  box-shadow        : 0px  8px 0px #aeaeae,
+                      1px  1px 4px #000000,
+                      1px  0px 0px #bebebe inset,
+                     -1px  0px 0px #363636 inset,
+                      0px  1px 0px #bebebe inset;
 }
 
 .menu ul li a{
+  border-top-left-radius  : 8px;
+  border-top-right-radius : 8px;
+  text-shadow       : 0px  0px 1px #ffffff,
+                     -1px -1px 0px #202020;
   padding           : 4px 8px 8px 8px;
   font-weight       : bold;
   font-family       : AlteHaasGroteskBold;
@@ -110,115 +128,119 @@ body > #container {
   line-height       : 16px;
   color             : #ffffff;
   text-decoration   : none;
-  border-top-left-radius  : 8px;
-  border-top-right-radius : 8px;
-  text-shadow       : 0px  0px 1px #ffffff,
-                     -1px -1px 0px #351454;
 }
 
 .menu ul li a:hover{
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color  : rgba(255, 255, 255, 0.25);
 }
 
 .menu ul li.active a:hover{
-  background-color: rgba(0, 0, 0, 0);
+  background-color  : rgba(0, 0, 0, 0);
 }
 
 .menu ul li.active a{
-  text-shadow       : 0px  0px 1px #ffffff,
-                     -1px -1px 0px #363636;
+  text-shadow : 0px  0px 1px #ffffff,
+               -1px -1px 0px #363636;
 }
 
 .menu+div{
-  position          : relative;
-  width             : auto;
-  height            : 8px;
-  margin            : 1px 8px -9px 8px;
-  background-color  : #878787;
-  z-index           : 3;
+  position            : relative;
+  width               : auto;
+  height              : 8px;
+  margin              : 1px 8px -9px 8px;
+  background-color    : #aeaeae;
+  background-image    : url("res/images/lined-texture.png");
+  background-position : 0px -1px;
+  z-index             : 3;
 }
 
-#content .panel{
-  clear: both;
-  padding           : 8px 4px;
+#content>.panel{
+  clear   : both;
+  padding : 8px 4px;
 
 }
 
-#content .full{
+#content>.full{
   float : left;
-  width     : 784px;
-  clear: none;
+  width : 784px;
+  clear : none;
 }
 
-#content .half{
+#content>.half{
   float : left;
-  width     : 388px;
-  clear: none;
+  width : 388px;
+  clear : none;
 }
 
-#content .quarter{
+#content>.quarter{
   float : left;
-  width     : 190px;
-  clear: none;
+  width : 190px;
+  clear : none;
 }
 
-#content .eighth{
+#content>.eighth{
   float : left;
-  width     : 91px;
-  clear: none;
+  width : 91px;
+  clear : none;
 }
 
-#content .right{
+#content>.right{
   float : right
 }
 
-#content .panel *{
-  background-color  : #dedede;
+#content>.panel>*{
+  background-image  : -moz-radial-gradient(left top,
+                                         circle farthest-corner,
+                                         #FFFFFF 0%,
+                                         #DEDEDE 100%);
   width             : auto;
   padding           : 8px;
-  border-radius     : 8px;
-  box-shadow:  1px  1px 2px #000000,
-               1px  0px 0px #ffffff inset,
-              -1px  0px 0px #878787 inset,
-               0px  1px 0px #ffffff inset,
-               0px -1px 0px #878787 inset;
   position          : relative;
   z-index           : 2;
+  border-radius     : 8px;
+  box-shadow        : 1px  1px 2px #000000,
+                      1px  0px 0px #ffffff inset,
+                     -1px  0px 0px #878787 inset,
+                      0px  1px 0px #ffffff inset,
+                      0px -1px 0px #878787 inset;
 }
 
 #container{
-  width         : 800px;
-  margin            : 0px auto;
+  width   : 800px;
+  margin  : 0px auto;
 
 }
 
 #bottom{
-  clear: both;
-  position: relative;
-  z-index  : 10;
-  height  : 48px;
-  margin-top : -48px;
-
-  width             : 800px;
-  padding           : 0px;
-  margin-left       : auto;
-  margin-right      : auto;
+  clear         : both;
+  position      : relative;
+  z-index       : 10;
+  height        : 48px;
+  margin-top    : -48px;
+  width         : 800px;
+  padding       : 0px;
+  margin-left   : auto;
+  margin-right  : auto;
 
 }
 
 #bottom div{
-  width             : 768px;
-  height            : 48px;
-  background-color  : #202020;
-  margin            : 0px 16px;
-  color             : #ffffff;
-  text-align        : center;
   border-top-left-radius  : 8px;
   border-top-right-radius : 8px;
-  box-shadow:  1px  1px 4px #000000 inset,
-               1px  0px 0px #545454,
-              -1px  0px 0px #202020,
-               0px  1px 0px #545454,
-               0px -1px 0px #202020;
+  width                 : 768px;
+  height                : 48px;
+  background-color      : #202020;
+  background-image      : url("res/images/lined-texture-vertical.png");
+  background-attachment : fixed;
+  margin                : 0px 16px;
+  color                 : #ffffff;
+  line-height           : 48px;
+  vertical-align        : middle;
+  text-align            : center;
+  box-shadow            : 1px  1px 4px #000000 inset,
+                          1px  0px 0px #545454,
+                         -1px  0px 0px #202020,
+                          0px  1px 0px #545454,
+                          0px -1px 0px #202020;
 }
 
